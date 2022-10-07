@@ -3,6 +3,9 @@
 @import './base/visually-hidden';
 @import './base/body';
 
+@import './utils/variables';
+@import './base/body';
+
 @import './components/buttons';
 @import './components/container';
 @import './components/logo';
@@ -11,7 +14,7 @@
 @import './layouts/menu';
 @import './layouts/hero';
 @import './layouts/products';
-@import './layouts/how-made';
+@import './layouts/about';
 @import './layouts/reviews';
 @import './layouts/contacts';
 @import './layouts/footer';
