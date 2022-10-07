@@ -1,2 +1,16 @@
-@import './common';
-@import './example';
+@import './base/normalize';
+@import './base/reset';
+@import './base/visually-hidden';
+
+@import './components/buttons';
+@import './components/container';
+@import './components/logo';
+@import './components/section';
+
+@import './layouts/header';
+@import './layouts/hero';
+@import './layouts/products';
+@import './layouts/how-made';
+@import './layouts/reviews';
+@import './layouts/contacts';
+@import './layouts/footer';
