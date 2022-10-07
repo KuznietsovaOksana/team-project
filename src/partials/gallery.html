@@ -1,0 +1,33 @@
+<section class="gallery_section">
+  <div class="gallery__container container">
+    <h2 class="gallery__title visually-hidden">Gallery</h2>
+    <picture class="gallery__picture">
+      <source
+        srcset="
+          ./images/customer_reviews/lots_ice-cream_d-min.jpg    1x,
+          ./images/customer_reviews/lots_ice-cream_d@2x-min.jpg 2x
+        "
+        media="(min-width:1200px)"
+      />
+      <source
+        srcset="
+          ./images/customer_reviews/lots_ice-cream_t-min.jpg    1x,
+          ./images/customer_reviews/lots_ice-cream_t@2x-min.jpg 2x
+        "
+        media="(min-width:768px)"
+      />
+      <source
+        srcset="
+          ./images/customer_reviews/lots_ice-cream_m-min.jpg    1x,
+          ./images/customer_reviews/lots_ice-cream_m@2x-min.jpg 2x
+        "
+        media="(max-width:767px)"
+      />
+      <img
+        class="gallery__img"
+        src="images/customer_reviews/lots_ice-cream_m-min.jpg"
+        alt="Багато морозива"
+      />
+    </picture>
+  </div>
+</section>

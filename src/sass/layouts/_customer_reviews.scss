@@ -1,0 +1,95 @@
+.customers {
+  padding-top: 80px;
+  padding-bottom: 394px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  background-color: #f5f5f5;
+  background-image: url('./../images/customer_reviews/bg_ice_m-min.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url('./../images/customer_reviews/bg_ice_m@2x-min.png');
+  }
+  @media screen and (min-width: 481px) {
+    background-image: url('./../images/customer_reviews/bg_ice_t-min.png');
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('./../images/customer_reviews/bg_ice_t@2x-min.png');
+    }
+  }
+  @media screen and (min-width: 769px) {
+    background-image: url('./../images/customer_reviews/bg_ice_d-min.png');
+    padding-top: 223px;
+    padding-bottom: 383px;
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('./../images/customer_reviews/bg_ice_d@2x-min.png');
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    background-image: url('./../images/customer_reviews/bg_ice_d_1920-min.png');
+    padding-top: 452px;
+    padding-bottom: 207px;
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('./../images/customer_reviews/bg_ice_d_1920@2x-min.png');
+    }
+  }
+}
+
+.customers__image {
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+  border: 1px solid #0a8817;
+  margin-bottom: 32px;
+  @media screen and (min-width: 768px) and (max-width: 1200px) {
+    margin-bottom: 28px;
+  }
+}
+
+.customers__description {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 968px;
+  padding: 34px 39px;
+  margin-bottom: 30px;
+  background: #84a178;
+  border-radius: 10px;
+  font-size: 12px;
+  line-height: 2.55;
+  color: #fcfcfc;
+  @media screen and (min-width: 768px) {
+    padding: 29px 80px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.86;
+  }
+  @media screen and (min-width: 1200px) {
+    padding: 39px 74px;
+    font-size: 16px;
+  }
+}
+
+.customers__name {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.86;
+  color: #131313;
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+  }
+}
