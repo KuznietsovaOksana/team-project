@@ -93,3 +93,27 @@
     font-size: 16px;
   }
 }
+
+.swiper {
+  width: 280px;
+  height: 470px;
+}
+
+.swiper-pagination {
+  width: 72px;
+  height: 12px;
+}
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background: #d9d9d9;
+  opacity: 1;
+}
+.swiper-pagination-bullet-active {
+  background: var(--swiper-pagination-color, #84a178);
+}
+.swiper-button-prev,
+.swiper-button-next {
+  width: 12px;
+  color: #fcfcfc;
+}
