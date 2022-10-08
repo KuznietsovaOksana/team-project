@@ -1,5 +1,4 @@
 .hero{
-    max-width: 1600px;
     background-color: var(--bg-color);
 }
 .hero-container {
@@ -57,26 +56,35 @@
         color: var(--primary-white-color);
     }
 }
-
-
 .hero__link--rct {
     color: currentColor;
 }
+
 .hero__link--ul {
     color: var(--accent-color);
     text-decoration: underline;
 }
 
-.dots-img {
-    position: absolute;
-    bottom: 0;
-    left:0;
-    width: 100%;
-    max-width: 480px;
-}
+// .dots-img {
+//     position: absolute;
+//     bottom: 0;
+//     left:0;
+//     width: 100%;
+//     max-width: 480px;
+// }
 
 .icecream-img{
     position: absolute;
     top: 233px;
     left: 35px;
+}
+.dots__img--right {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.dots__img--left {
+    position: absolute;
+    bottom: 0;
+    left: 0;
 }
