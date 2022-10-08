@@ -1,0 +1,15 @@
+.menu__icon {
+    display: block;
+    fill: var(--primary-white-color);
+}
+
+.menu__btn {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+}

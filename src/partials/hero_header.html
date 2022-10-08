@@ -1,7 +1,8 @@
 <header class="header">
     <div class="header-container container">
-        <a class="header__logo" href="#">
-            <img src="./images/header_hero/logo_m-min.png" alt="logo">
+        <a class="header__logo" href="#" aria-label="logo">
+            <!-- добавить svg и через медиа поменять размер, она векторная и не изменит качества -->
+            <img class="logo__img" src="./images/header_hero/logo_m-min.png" alt="logo">
         </a>
         <nav class="header-nav">
             <ul class="header-nav__list">
@@ -19,6 +20,29 @@
                 </li>
             </ul>
         </nav>
-        <button class="header__btn button" type="button">Buy now</button>
+        <button class="header__btn" type="button">Buy now</button>
+
+        <button class="menu__btn js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+            <svg class="menu__icon" width="32" height="32">
+                <use href="./icons/icons.svg#menu"></use>
+            </svg>
+        </button>
     </div>
 </header>
+
+<div class="menu-container js-menu-container" id="mobile-menu">
+    <button class="menu__btn js-close-menu">
+        <svg class="menu__icon" width="32" height="32">
+            <use href="./icons/icons.svg#close-menu"></use>
+        </svg>
+    </button>
+    <ul class="mobile__menu">
+        <li><a href="#" class="link">Home</a></li>
+        <li><a href="#" class="link">How it's made?</a></li>
+        <li><a href="#" class="link">Our products</a></li>
+        <li><a href="#" class="link">Contacts</a></li>
+        <button class="" type="button">Buy now</button>
+    </ul>
+</div>
+
+
