@@ -2,7 +2,19 @@
     <div class="header-container container">
         <a class="header__logo" href="#" aria-label="logo">
             <!-- добавить svg и через медиа поменять размер, она векторная и не изменит качества -->
-            <img class="logo__img" src="./images/header_hero/logo_m-min.png" alt="logo">
+            <img 
+            class="logo-img" 
+            srcset=
+            "./images/header_hero/logo_m-min.png 41w,
+            ./images/header_hero/logo_m@2x-min.png 81w,
+            ./images/header_hero/logo_t-min.png 48w,
+            ./images/header_hero/logo_t@2x-min.png 96w,
+            ./images/header_hero/logo_d-min.png 60w,
+            ./images/header_hero/logo_d@2x-min.png 120w"
+
+            sizes="(min-width: 1200px) 60px, (min-width: 768px) 48px, (min-width: 320px) 41px, 100vw"
+            src="./images/header_hero/logo_m-min.png" 
+            alt="logo">
         </a>
         <nav class="header-nav">
             <ul class="header-nav__list">
@@ -29,8 +41,23 @@
         </button>
     </div>
 </header>
+<section class="hero">
+    <div class="hero-container container">
+        <h1 class="hero__title">ice cream <br> made with <br>
+        <span class="hero__passion">passion</span></h1>
+        <ul class="hero__wrap">
+            <li class="hero__item hero__item--btn"><a class="hero__link hero__link--rct" href="#products">Products</a></li>
+            <li class="hero__item"><a class="hero__link hero__link--ul" href="#how-its-made">How it's made?</a></li>
+        </ul>
 
-<div class="menu-container js-menu-container" id="mobile-menu">
+        <img class="dots-img" src="./images/header_hero/bg-dots_m-min.png" alt="dots">
+        <img class="icecream-img" src="./images/header_hero/ice-cream_m-min.png" alt="ice-cream">
+        
+    </div>
+    
+</section>
+
+<!-- <div class="menu-container js-menu-container" id="mobile-menu">
     <button class="menu__btn js-close-menu">
         <svg class="menu__icon" width="32" height="32">
             <use href="./icons/icons.svg#close-menu"></use>
@@ -43,6 +70,6 @@
         <li><a href="#" class="link">Contacts</a></li>
         <button class="" type="button">Buy now</button>
     </ul>
-</div>
+</div> -->
 
 
