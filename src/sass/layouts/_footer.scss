@@ -1,0 +1,121 @@
+.footer {
+  background-color: var(--bg-color);
+  color: var(--primary-white-color);
+}
+
+.footer-wrapper {
+  display: flex;
+  align-items: baseline;
+  flex-direction: column;
+  gap: 42px;
+  padding-bottom: 40px;
+
+  border-bottom: var(--primary-white-color) 2px solid;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    flex-direction: row;
+    align-items: end;
+    gap: 0px;
+    padding-bottom: 32px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+    align-items: end;
+    gap: 0px;
+    padding-bottom: 54px;
+  }
+}
+
+.footer-title {
+  display: block;
+  max-width: 250px;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.2;
+  text-transform: uppercase;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    min-width: 55%;
+    font-size: 26px;
+    letter-spacing: 0.1rem;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-weight: 400;
+    font-size: 30px;
+    min-width: 60%;
+  }
+}
+
+.footer-title-accent {
+  display: block;
+  margin-top: 16px;
+
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0.2rem;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    font-size: 48px;
+    margin-top: 9px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 58px;
+  }
+}
+
+.footer-contacts {
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.footer-contacts-number {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.8;
+  color: var(--primary-black-color);
+  & a {
+    color: var(--primary-white-color);
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    font-size: 14px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+  }
+}
+
+.copyright {
+  display: block;
+  max-width: 160px;
+  margin: 0 auto;
+  padding-bottom: 60px;
+  padding-top: 16px;
+
+  font-weight: 700;
+  line-height: 1.8;
+  color: var(--copyright-color);
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    min-width: 100%;
+    text-align: center;
+    padding: 14px 0;
+    font-size: 12px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    min-width: 100%;
+    text-align: center;
+    padding: 12px 0;
+    font-size: 12px;
+  }
+}
