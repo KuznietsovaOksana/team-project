@@ -95,13 +95,19 @@
 }
 
 .swiper {
-  width: 280px;
-  height: 470px;
+  max-width: 280px;
+  height: 480px;
+  @media screen and (min-width: 321px) {
+    min-width: 281px;
+    max-width: 480px;
+    width: 100%;
+  }
 }
 
 .swiper-pagination {
   width: 72px;
   height: 12px;
+  bottom: 0;
 }
 .swiper-pagination-bullet {
   width: 12px;
@@ -111,9 +117,4 @@
 }
 .swiper-pagination-bullet-active {
   background: var(--swiper-pagination-color, #84a178);
-}
-.swiper-button-prev,
-.swiper-button-next {
-  width: 12px;
-  color: #fcfcfc;
 }
