@@ -32,7 +32,12 @@
                 </li>
             </ul>
         </nav>
-        <button class="header__btn" type="button">Buy now</button>
+        <button class="header__btn" type="button">
+            Buy now
+            <svg class="header__icon" width="12" height="12">
+              <use href="./icons/icons.svg#ahead"></use>
+            </svg>            
+        </button>
 
         <button class="menu__btn js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
             <svg class="menu__icon" width="32" height="32">
@@ -51,20 +56,34 @@
         </ul>
         
         <div class="hero__content">
-            <img class="hero__img" 
-            
+            <img class="hero__img"
             srcset=
             "./images/header_hero/much_ice-cream_t-min.png 152w,
             ./images/header_hero/much_ice-cream_t@2x-min.png 304w,
             ./images/header_hero/much_ice-cream_d-min.png 225w,
             ./images/header_hero/much_ice-cream_d@2x-min.png 450w"
-
             sizes="(min-width: 1200px) 225px, (min-width: 768px) 152px, 100vw"
             src="./images/header_hero/much_ice-cream_t-min.png" alt="pallet">
             <p class="hero__text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
             </p>
-        </div>      
+        </div>   
+        <button class="hero__arrow" type="button">
+            <svg class="arrow-icon" width="40" height="">
+                <use href="./icons/icons.svg#arrow"></use>
+            </svg>
+        </button>
+        
+        <ul class="header-store">
+            <li class="header-store__item">
+                <p class="header-store__amount">16</p>
+                <p class="header-store__type">cafes</p>
+            </li>
+            <li class="header-store__item">
+                <p class="header-store__amount">23</p>
+                <p class="header-store__type">food trucks</p>
+            </li>
+        </ul>
     </div>
     
 </section>

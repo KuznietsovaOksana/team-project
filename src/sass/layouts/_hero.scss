@@ -3,7 +3,8 @@
 }
 .hero-container {
     position: relative;
-    padding-top: 61px;
+    padding-top: 110px;
+    // padding-top: 61px;
     // padding-left: 20px;
     padding-bottom: 239px;
 
@@ -62,12 +63,14 @@
     }
 
     @media screen and (min-width: 768px) {
-        padding-top: 38px;
+        // padding-top: 38px;
+        padding-top: 104px;
         padding-bottom: 13px;
 
     }
     @media screen and (min-width: 1200px) {
-        padding-top: 45px;
+        // padding-top: 45px;
+        padding-top: 118px;
         padding-bottom: 65px;
     }
 }
@@ -109,7 +112,7 @@
 
 .hero__wrap {
     display: inline-flex;
-    align-items: center;
+    align-items: baseline;
     gap: 8px;
     @media screen and (min-width: 768px){
         margin-bottom: 28px;
@@ -130,9 +133,35 @@
     }
  }
 
-.hero__item--btn{
-    width: 62px;
-    height: 24px;
+// .hero__item--btn{
+//     width: 62px;
+//     height: 24px;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     border: 2px solid var(--accent-color);
+//     border-radius: 8px;
+//     color: var(--primary-black-color);
+//     &:hover {
+//         border-color: #0A8817;
+//     }
+    
+//     &:focus {
+//         border-color: #0A8817;
+//         color: var(--primary-white-color);
+//     }
+//     @media screen and (min-width: 1200px){
+//         width: 134px;
+//         height: 42px;
+//     }
+// }
+// .hero__link--rct {
+//     color: currentColor;
+// }
+
+
+.hero__link--rct {
+    padding: 7px 12px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -140,42 +169,27 @@
     border-radius: 8px;
     color: var(--primary-black-color);
     &:hover {
-        border-color: #0A8817;
+        border-color: var(--btn-hover);
     }
-    
+
     &:focus {
-        border-color: #0A8817;
+        border-color:var(--btn-hover);
         color: var(--primary-white-color);
     }
     @media screen and (min-width: 1200px){
-        width: 134px;
-        height: 42px;
+       padding: 12px 34px;
     }
-}
-.hero__link--rct {
-    color: currentColor;
 }
 
 .hero__link--ul {
     color: var(--accent-color);
     text-decoration: underline;
-}
-
-.icecream-img{
-    position: absolute;
-    bottom: 0;
-    right: 50px;
-   
-}
-.dots__img--right {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-}
-.dots__img--left {
-    position: absolute;
-    bottom: 0;
-    left: 0;
+    &:hover {
+        color: var(--btn-hover);
+    }
+    &:focus {
+        color: var(--primary-white-color);
+    }
 }
 
 .hero__content {
@@ -190,6 +204,15 @@
         gap: 14px;
     }
 }
+// .hero__dscr{
+//     display: flex;
+//     flex-direction: column;
+//     align-items: start;
+//     gap: 13px;
+//     @media screen and (min-width: 1200px){
+//         gap: 27px;
+//     }
+// }
 .hero__text {
     width: 151px;
     font-size: 12px;
@@ -201,3 +224,75 @@
         font-size: 14px;
     }
 }
+.hero__arrow {
+    position: absolute;
+    left: 256px;
+    bottom: 104px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    padding: 0;
+}
+.arrow-icon {
+    width: 40px;
+    height: 15px;
+    fill: var(--primary-white-color);
+}
+
+.header-store {
+    @media screen and (max-width: 767px){
+        display: none;
+    }
+    position: absolute;
+    top: 94px;
+    right:32px;
+    display: flex;
+    flex-direction: column;
+    // align-items: start;
+    gap: 20px;
+    text-align: right;
+    @media screen and (min-width: 1200px) {
+        gap: 16px;
+    }
+    
+}
+
+.header-store__amount {
+    font-weight: 900;
+    font-size: 28px;
+    line-height: calc(34/28);
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--primary-black-color);
+    @media screen and (min-width: 1200px) {
+        font-size: 46px;
+        line-height: calc(56/46);
+    }
+}
+
+.header-store__type {
+    font-size: 8px;
+    line-height: calc(10/8);
+    color: var(--primary-white-color);
+    @media screen and (min-width: 1200px) {
+        font-size: 14px;
+        line-height: calc(17/14);
+    }
+}
+// .icecream-img{
+//     position: absolute;
+//     bottom: 0;
+//     right: 50px;
+   
+// }
+// .dots__img--right {
+//     position: absolute;
+//     bottom: 0;
+//     right: 0;
+// }
+// .dots__img--left {
+//     position: absolute;
+//     bottom: 0;
+//     left: 0;
+// }

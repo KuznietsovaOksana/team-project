@@ -1,22 +1,19 @@
 .header {
-    // position: absolute;
-    // width: 100%;
-    // top: 0;
+    position: absolute;
+    width: 100%;
+    top: 0;
     padding-top: 12px;
-    // padding-bottom: 12px;
+    z-index: 10;
+
     @media screen and (min-width: 768px) {
         padding-top: 20px;
-        // padding-bottom: 20px;
     }
     @media screen and (min-width: 1200px) {
         padding-top: 8px;
-        // padding-bottom: 8px;
     }
-    background: var(--bg-color);
 }
 
 .header-container {
-   
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -32,25 +29,40 @@
 }
 
 .header-nav__list {
+    display: flex;
+    gap: 27px;
+
     @media screen and (max-width: 1199px){
         display: none;
     }
-    display: flex;
-    gap: 27px;
 }
 
-.header-nav__item {
-    display: flex;
-    align-items: center;
+// .header-nav__item {
+//     display: flex;
+//     align-items: center;
 
+//     font-weight: 700;
+//     font-size: 16px;
+//     line-height: 20px;
+//     color: var(--primary-white-color);
+// }
+
+.header-nav__link {
+    padding-top: 40px;
+    padding-bottom: 40px;
     font-weight: 700;
     font-size: 16px;
     line-height: 20px;
     color: var(--primary-white-color);
-}
 
-.header-nav__link {
-    color: currentColor;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
 }
 
 .header__btn {    
@@ -60,13 +72,20 @@
     font-size: 14px;
     line-height: calc(17/14);
     display: flex;
-    align-items: center;
+    align-items: baseline;
     text-align: center;
 
     color: var(--primary-black-color);
-
     background-color: var(--accent-color);
     border-radius: 10px;
+
+    &:hover {
+        background-color: var(--btn-hover);
+    }
+    &:focus {
+        background-color: var(--btn-hover);
+        color: var(--primary-white-color);
+    }
 
     @media screen and (max-width: 767px) {
         display: none;
@@ -76,4 +95,8 @@
         order: 3;
         margin-left: 32px;
     }
+}
+
+.header__icon {
+    margin-left: 7px;
 }
