@@ -126,14 +126,22 @@
 .contacts-buttons {
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
   gap: 16px;
   margin-top: 32px;
   flex-wrap: wrap;
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     margin-top: 60px;
+    flex-direction: row;
   }
   @media screen and (min-width: 1200px) {
     margin-top: 64px;
+    flex-direction: row;
   }
+}
+
+.contacts-button {
+  min-width: 200px;
 }
