@@ -1,11 +1,13 @@
 .contacts {
-  background-color: var(--bg-color);
+  background: linear-gradient(rgba(255, 255, 255, 0.016) 22.3%, #84a178 22.3%);
+  padding-bottom: 40px;
+
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 120px;
+  }
 }
 
 .contacts-wrapper {
-  position: relative;
-  bottom: 340px;
-
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -118,5 +120,20 @@
   &:hover {
     text-decoration: underline;
     color: var(--contact-color);
+  }
+}
+
+.contacts-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 32px;
+  flex-wrap: wrap;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-top: 60px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-top: 64px;
   }
 }
