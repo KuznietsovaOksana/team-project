@@ -21,9 +21,6 @@
 }
 
 .customers__description {
-  max-width: 968px;
-  margin-left: auto;
-  margin-right: auto;
   padding: 34px 39px;
   margin-bottom: 30px;
   background: var(--bg-color);
@@ -54,12 +51,20 @@
 }
 
 .swiper {
-  max-width: 280px;
+  width: 281px;
   height: 480px;
-  @media screen and (min-width: 321px) {
-    min-width: 281px;
-    max-width: 480px;
-    width: 100%;
+
+  @media screen and (min-width: 480px) {
+    width: 440px;
+    height: 390px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 640px;
+    height: 370px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 968px;
+    height: 390px;
   }
 }
 
@@ -68,6 +73,7 @@
   height: 12px;
   bottom: 0;
 }
+
 .swiper-pagination-bullet {
   width: 12px;
   height: 12px;

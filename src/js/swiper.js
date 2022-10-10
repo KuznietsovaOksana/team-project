@@ -3,7 +3,6 @@ const swiper = new Swiper('.swiper', {
   direction: 'horizontal',
   loop: true,
   spaceBetween: 24,
-  grabCursor: true,
 
   // If we need pagination
   pagination: {
@@ -12,4 +11,5 @@ const swiper = new Swiper('.swiper', {
   },
 
   autoHeight: true,
+  grabCursor: true,
 });
