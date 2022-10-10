@@ -1,0 +1,30 @@
+.gallery_section {
+  max-width: 100%;
+  background-image: linear-gradient(
+    to bottom,
+    var(--bg-color) 24px,
+    rgba(255, 255, 255, 0.01) 24px
+  );
+  @media screen and (min-width: 768px) {
+    background-image: linear-gradient(
+      to bottom,
+      var(--bg-color) 164px,
+      rgba(255, 255, 255, 0.01) 164px
+    );
+  }
+  @media screen and (min-width: 1200px) {
+    background-image: linear-gradient(
+      to bottom,
+      var(--bg-color) 94px,
+      rgba(255, 255, 255, 0.01) 94px
+    );
+  }
+}
+
+.gallery__img {
+  margin: 0 auto;
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1200px) {
+  }
+}
