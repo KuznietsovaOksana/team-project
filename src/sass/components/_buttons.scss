@@ -6,10 +6,12 @@
 
   padding: 12px 34px;
 
+  font-family: var(--main-font);
   border-radius: 10px;
   background-color: var(--accent-color);
+  color: inherit;
+  fill: currentColor;
   font-weight: 600;
-  line-height: 1.2;
 
   transition: background-color var(--animation), color var(--animation);
 
@@ -35,11 +37,13 @@
 
   padding: 12px 34px;
 
+  font-family: var(--main-font);
   border-radius: 10px;
   border: var(--accent-color) 2px solid;
   background-color: transparent;
+  color: inherit;
+  fill: currentColor;
   font-weight: 600;
-  line-height: 1.2;
 
   transition: border var(--animation);
 
