@@ -1,13 +1,19 @@
 .contacts {
   background: linear-gradient(rgba(255, 255, 255, 0.016) 22.3%, #84a178 22.3%);
   padding-bottom: 40px;
+  padding-top: 48px;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    padding-top: 80px;
+  }
 
   @media screen and (min-width: 1200px) {
     padding-bottom: 120px;
+    padding-top: 100px;
   }
 }
 
-.contacts-wrapper {
+.contacts__list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -24,7 +30,7 @@
   }
 }
 
-.contacts-card {
+.contacts__item {
   max-width: 280px;
   padding: 40px 32px;
   background-color: var(--primary-white-color);
@@ -41,7 +47,7 @@
   }
 }
 
-.contacts-card__item {
+.card__item {
   width: 100%;
   padding: 20px 0;
   border-bottom: 1px solid var(--btn-disable);
@@ -63,7 +69,7 @@
   }
 }
 
-.contacts-card__title {
+.contacts__heading {
   width: fit-content;
   padding: 0 22px;
 
@@ -87,7 +93,7 @@
   }
 }
 
-.contacts-card__dimmed-element {
+.card__dimmed-element {
   display: block;
   color: var(--copyright-color);
 
@@ -102,11 +108,11 @@
   }
 }
 
-.contacys-card__element {
+.card__link {
   display: block;
 }
 
-.contacts-card___highlighted-element {
+.card__link--highlighted {
   display: block;
   margin-top: 8px;
   color: var(--contact-color);
@@ -123,7 +129,7 @@
   }
 }
 
-.contacts-buttons {
+.contacts__buttons {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -142,6 +148,6 @@
   }
 }
 
-.contacts-button {
+.contacts__button {
   min-width: 200px;
 }
