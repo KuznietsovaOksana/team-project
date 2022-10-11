@@ -22,12 +22,13 @@
     align-items: end;
     gap: 0px;
     padding-bottom: 54px;
+    align-items: baseline;
   }
 }
 
 .footer__title {
   display: block;
-  max-width: 250px;
+  width: 250px;
 
   font-weight: 700;
   font-size: 18px;
@@ -47,7 +48,7 @@
   }
 }
 
-.footer__title--accent {
+.footer__text {
   display: block;
   margin-top: 16px;
 
@@ -66,7 +67,7 @@
   }
 }
 
-.footer__contacts {
+.footer__info {
   width: 100%;
   display: flex;
   align-items: flex-end;
@@ -74,7 +75,7 @@
   gap: 40px;
 }
 
-.contacts__number {
+.info__tel {
   font-size: 12px;
   font-weight: 700;
   line-height: 1.8;
