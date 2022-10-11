@@ -112,13 +112,20 @@
   @media screen and (min-width: 1200px) {
     min-width: 100%;
     text-align: center;
-    padding: 12px 0;
     font-size: 12px;
   }
 }
 
 .copyright {
   border-top: var(--primary-white-color) 1px solid;
-  padding-bottom: 60px;
+  padding-bottom: 62px;
   padding-top: 16px;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    padding: 0 14px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding: 0 12px;
+  }
 }
