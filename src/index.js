@@ -1,2 +1,2 @@
 import './js/swiper';
-// $('.single-item').slick();
+import './js/swiper_02';

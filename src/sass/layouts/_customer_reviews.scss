@@ -3,10 +3,6 @@
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  @media screen and (min-width: 769px) {
-  }
-  @media screen and (min-width: 1200px) {
-  }
 }
 
 .customers__image {
@@ -51,8 +47,8 @@
 }
 
 .swiper {
-  width: 281px;
-  height: 480px;
+  width: 100vw;
+  height: 450px;
 
   @media screen and (min-width: 480px) {
     width: 440px;
@@ -71,7 +67,6 @@
 .swiper-pagination {
   width: 72px;
   height: 12px;
-  bottom: 0;
 }
 
 .swiper-pagination-bullet {
