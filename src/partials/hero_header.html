@@ -1,7 +1,8 @@
 <!-- ======================== Header =============================== -->
 <header class="header">
     <div class="header__container container">
-        <a class="logo" href="#home" aria-label="logo">
+
+        <a class="logo" href="#home" aria-label="logo" id="home">
             <!-- добавить svg и через медиа поменять размер, она векторная и не изменит качества -->
             <img 
             class="logo__img" 
@@ -17,6 +18,7 @@
             src="./images/header_hero/logo_m-min.png" 
             alt="logo">
         </a>
+
         <nav class="header__nav">
             <ul class="header__list">
                 <li class="header__item">
@@ -33,9 +35,10 @@
                 </li>
             </ul>
         </nav>
-        <button class="header__btn" type="button">
+
+        <button class="button header-btn" type="button">
             Buy now
-            <svg class="header__icon" width="12" height="12">
+            <svg  width="12" height="12">
               <use href="./icons/icons.svg#ahead"></use>
             </svg>            
         </button>
@@ -45,12 +48,24 @@
                 <use href="./icons/icons.svg#menu"></use>
             </svg>
         </button>
+
     </div>
 </header>
 <!-- ======================== Hero ================================= -->
 <section class="hero">
     <div class="hero__container container">
-        <h1 class="hero__title" id="home">ice cream <br> made with <br>
+        <div class="hero__icecream">
+            <img class="hero__icecream-img" srcset="./images/header_hero/ice-cream_m-min.png 276w,
+                    ./images/header_hero/ice-cream_m@2x-min.png 552w,
+                    ./images/header_hero/ice-cream_t-min.png 379w,
+                    ./images/header_hero/ice-cream_t@2x-min.png 758w,
+                    ./images/header_hero/ice-cream_d-min.png 642w,
+                    ./images/header_hero/ice-cream_d@2x-min.png 1284w"
+                sizes="(min-width: 1200px) 642px, (min-width: 768px) 379px, (min-width: 320px) 276px, 100vw"
+                src="./images/header_hero/ice-cream_m-min.png" alt="icecream">
+        </div>
+
+        <h1 class="hero__title" ">ice cream <br> made with <br>
         <span class="hero__passion">passion</span></h1>
         <ul class="hero__btn-set">
             <li class="hero__item"><a class="hero__link hero__link--rct" href="#products">Products</a></li>
@@ -85,29 +100,18 @@
            </div>
         </a> 
         
-        <ul class="hero-store">
-            <li class="hero-store__item">
-                <p class="hero-store__amount">16</p>
-                <p class="hero-store__type">cafes</p>
+        <ul class="store">
+            <li class="store__item">
+                <p class="store__amount">16</p>
+                <p class="store__type">cafes</p>
             </li>
-            <li class="hero-store__item">
-                <p class="hero-store__amount">23</p>
-                <p class="hero-store__type">food trucks</p>
+            <li class="store__item">
+                <p class="store__amount">23</p>
+                <p class="store__type">food trucks</p>
             </li>
         </ul>
 
-        <div class="hero__icecream">
-            <img class="hero__icecream-img"
-             srcset=
-            "./images/header_hero/ice-cream_m-min.png 276w,
-            ./images/header_hero/ice-cream_m@2x-min.png 552w,
-            ./images/header_hero/ice-cream_t-min.png 379w,
-            ./images/header_hero/ice-cream_t@2x-min.png 758w,
-            ./images/header_hero/ice-cream_d-min.png 642w,
-            ./images/header_hero/ice-cream_d@2x-min.png 1284w"
-            sizes="(min-width: 1200px) 642px, (min-width: 768px) 379px, (min-width: 320px) 276px, 100vw"
-            src="./images/header_hero/ice-cream_m-min.png" alt="icecream">
-        </div>
+        
     </div>
     
 </section>
@@ -135,11 +139,11 @@
         <li><a href="#how-its-made" class="menu__link">How it's made?</a></li>
         <li><a href="#our-products" class="menu__link">Our products</a></li>
         <li><a href="#contact" class="menu__link">Contacts</a></li>
-        <!-- <button class="menu__btn" type="button">Buy now</button> -->       
+        <!-- <button class="menu-btn" type="button">Buy now</button> -->       
     </ul>
-    <button class="menu__btn" type="button">
+    <button class="button menu-btn" type="button">
         Buy now
-        <svg class="header__icon" width="12" height="12">
+        <svg  width="12" height="12">
             <use href="./icons/icons.svg#ahead"></use>
         </svg>
     </button>
