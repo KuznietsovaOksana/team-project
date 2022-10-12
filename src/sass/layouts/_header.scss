@@ -2,6 +2,8 @@
     position: absolute;
     width: 100%;
     top: 0;
+    left: 50%;
+    transform: translateX(-50%);
     padding-top: 12px;
     z-index: 10;
 
@@ -36,16 +38,23 @@
         display: none;
     }
 }
-
+.header-nav__item {
+    color: var(--primary-white-color);
+    // transition: color 500ms cubic-bezier(0.4, 0, 0.2, 1);
+    // &:hover,
+    // &:focus {
+    //     color: var(--accent-color);
+    // }
+}
 .header-nav__link {
     padding-top: 40px;
     padding-bottom: 40px;
     font-weight: 700;
     font-size: 16px;
     line-height: 20px;
-    color: var(--primary-white-color);
+    color: currentColor;
     
-    transition: color 250 cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover,
     &:focus {

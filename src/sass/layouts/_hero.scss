@@ -14,8 +14,8 @@
     url('../images/header_hero/bg-dots_m_left-min.png'), 
     url('../images/header_hero/bg-dots_m_right-min.png');
     background-size: auto, auto, auto;
-    // background-position: bottom -53px right 15px, bottom left, bottom right;
-    background-position: bottom -53px center, bottom left, bottom right;
+    background-position: bottom -53px right 15px, bottom left, bottom right;
+    // background-position: bottom -53px center, bottom left, bottom right;
     background-repeat: no-repeat, no-repeat, no-repeat;
 
     @media (min-device-pixel-ratio: 2),
@@ -78,6 +78,7 @@
 }
 
 .hero__title{
+    max-width: 247px;
     margin-bottom: 32px;
     font-family: var(--title-font);
     font-size: 26px;
@@ -125,6 +126,7 @@
         gap: 12px;
     }
 }
+
  .hero__link{
     font-weight: 600;
     font-size: 8px;
