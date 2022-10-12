@@ -3,7 +3,6 @@
     <div class="header__container container">
 
         <a class="logo" href="#home" aria-label="logo" id="home">
-            <!-- добавить svg и через медиа поменять размер, она векторная и не изменит качества -->
             <img 
             class="logo__img" 
             srcset=
@@ -36,7 +35,7 @@
             </ul>
         </nav>
 
-        <button class="button header-btn" type="button">
+        <button class="button header-btn js-open-modal" type="button" data-modal="1">
             Buy now
             <svg  width="12" height="12">
               <use href="./icons/icons.svg#ahead"></use>
@@ -54,7 +53,7 @@
 <!-- ======================== Hero ================================= -->
 <section class="hero">
     <div class="hero__container container">
-        
+
         <div class="hero__icecream">
             <img class="hero__icecream-img" srcset="./images/header_hero/ice-cream_m-min.png 276w,
                     ./images/header_hero/ice-cream_m@2x-min.png 552w,
@@ -70,7 +69,7 @@
         <span class="hero__passion">passion</span></h1>
 
         <ul class="hero__btn-set">
-            <li class="hero__item"><a class="hero__link hero__link--rct" href="#our-products">Products</a></li>
+            <li class="hero__item"><a class="hero__link bordered-button hero__link--rct" href="#our-products">Products</a></li>
             <li class="hero__item"><a class="hero__link hero__link--ul" href="#how-its-made">How it's made?</a></li>
         </ul>
         
@@ -111,9 +110,7 @@
                 <p class="store__amount">23</p>
                 <p class="store__type">food trucks</p>
             </li>
-        </ul>
-
-        
+        </ul>     
     </div>
     
 </section>
@@ -143,7 +140,7 @@
         <li><a href="#contact" class="menu__link">Contacts</a></li>
         <!-- <button class="menu-btn" type="button">Buy now</button> -->       
     </ul>
-    <button class="button menu-btn" type="button">
+    <button class="button menu-btn js-open-modal" type="button" data-modal="1">
         Buy now
         <svg  width="12" height="12">
             <use href="./icons/icons.svg#ahead"></use>
@@ -158,6 +155,6 @@
 </script>
 <script src="./js/mobile.menu.js"></script>
 
-<!-- <script src="./js/modal.js"></script> -->
+<script src="./js/modal.js"></script>
 
 
