@@ -1,6 +1,7 @@
 @import './base/normalize';
 @import './base/reset';
 @import './base/visually-hidden';
+@import './base/body';
 
 @import './utils/variables';
 @import './base/body';
@@ -21,3 +22,5 @@
 @import './layouts/customer_reviews';
 @import './layouts/contacts';
 @import './layouts/footer';
+
+@import './utils/variables';
