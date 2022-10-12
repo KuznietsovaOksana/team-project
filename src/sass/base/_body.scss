@@ -1,0 +1,16 @@
+body {
+  min-width: fit-content;
+  background-image: url('./../images/customer_reviews/bg_ice_d_1920-min.png');
+  background-position: 50%;
+  background-attachment: fixed;
+  background-repeat: repeat-y;
+  background-size: cover;
+  font-family: var(--main-font);
+  letter-spacing: 0.04em;
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url('./../images/customer_reviews/bg_ice_d_1920@2x-min.png');
+  }
+}

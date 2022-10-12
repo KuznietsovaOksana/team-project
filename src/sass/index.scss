@@ -1,2 +1,23 @@
-@import './common';
-@import './example';
+@import './base/normalize';
+@import './base/reset';
+@import './base/visually-hidden';
+
+@import './utils/variables';
+@import './base/body';
+
+@import './components/buttons';
+@import './components/container';
+@import './components/logo';
+@import './components/socials';
+@import './components/modal';
+
+@import './layouts/header';
+@import './layouts/menu';
+@import './layouts/hero';
+@import './layouts/products';
+@import './layouts/about';
+@import './layouts/advantages';
+@import './layouts/gallery';
+@import './layouts/customer_reviews';
+@import './layouts/contacts';
+@import './layouts/footer';
