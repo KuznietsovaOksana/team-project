@@ -11,6 +11,7 @@
 @import './components/logo';
 @import './components/socials';
 @import './components/modal';
+@import './components/form';
 
 @import './layouts/header';
 @import './layouts/menu';
@@ -24,3 +25,9 @@
 @import './layouts/footer';
 
 @import './utils/variables';
+
+@import './modals/buy-now';
+@import './modals/franchise';
+@import './modals/ingredients';
+@import './modals/locations';
+@import './modals/production';

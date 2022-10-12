@@ -1,0 +1,103 @@
+.form {
+  max-width: 368px;
+  margin: 0 auto;
+}
+.form__label {
+  display: block;
+  margin-bottom: 16px;
+}
+.form__label--big {
+  margin-bottom: 32px;
+}
+.form__input {
+  height: 42px;
+  width: 100%;
+
+  padding: 0 10px;
+
+  background: rgba(248, 210, 78, 0.1);
+  border: 1px solid #84a178;
+  border-radius: 10px;
+
+  font-family: var(--main-font);
+  font-size: 14px;
+  line-height: calc(20 / 14);
+
+  color: var(--primary-black-color);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &::placeholder {
+    color: var(--primary-black-color);
+    opacity: 0.9;
+  }
+
+  &:focus {
+    border-color: var(--accent-color);
+  }
+
+  @media screen and (min-width: 768px) {
+    padding: 0 16px;
+  }
+}
+.form__textarea {
+  height: 84px;
+  width: 100%;
+
+  overflow: hidden;
+  resize: none;
+
+  padding: 11px 10px;
+
+  background: rgba(248, 210, 78, 0.1);
+  border: 1px solid #84a178;
+  border-radius: 10px;
+
+  font-family: var(--main-font);
+  font-size: 14px;
+  line-height: calc(20 / 14);
+
+  color: var(--primary-black-color);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &::placeholder {
+    color: var(--primary-black-color);
+    opacity: 0.9;
+  }
+
+  &:focus {
+    border-color: var(--accent-color);
+  }
+  @media screen and (min-width: 768px) {
+    padding: 11px 16px;
+  }
+}
+.form__label-btn {
+  display: block;
+  text-align: center;
+}
+
+// ! example
+
+//   <form class="form">
+//             <label class="form__label">
+//               <input class="form__input" type="text" name="ingredients-name" placeholder="Name" />
+//             </label>
+//             <label class="form__label">
+//               <input
+//                 class="form__input"
+//                 type="phone"
+//                 name="ingredients-phone"
+//                 placeholder="Phone"
+//               />
+//             </label>
+//             <label class="form__label form__label--big">
+//               <textarea
+//                 class="form__textarea"
+//                 name="ingredients__comment"
+//                 placeholder="Comment"
+//               ></textarea>
+//             </label>
+//             <label class="form__label-btn">
+//               <button class="button button-ingredients" type="submit">Submit</button>
+//             </label>
+//           </form>
