@@ -1,0 +1,22 @@
+.franchise__title {
+  display: block;
+  text-align: center;
+  font-family: var(--title-font);
+  font-size: 20px;
+}
+
+.franchise__text {
+  display: block;
+  width: 100%;
+  font-size: 14px;
+  margin: 20px 0 24px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+    margin: 24px 0 32px;
+  }
+}
+
+.franchise__button {
+  margin: 0 auto;
+}
