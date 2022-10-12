@@ -128,10 +128,10 @@
     position: absolute;
 
     @media screen and (min-width: 320px) and (max-width:767px){
-    bottom: -53px;
-    left: 50%;
-    margin-right: -50%;
-    transform: translateX(-50%);
+        bottom: -53px;
+        left: 50%;
+        margin-right: -50%;
+        transform: translateX(-50%);
     }
 
     @media screen and (min-width: 768px) {
@@ -184,6 +184,8 @@
 }
 
 .hero__btn-set {
+    position: relative;
+    z-index: 1;
     display: inline-flex;
     align-items: baseline;
     gap: 8px;
