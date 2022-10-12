@@ -124,8 +124,11 @@
 }
 .hero__icecream {
     position: absolute;
-    bottom: 0;
-    left: 0;
+    bottom: -53px;
+    left: 50%;
+    margin-right: -50%;
+    transform: translateX(-50%);
+    
 }
 .hero__title{
     // max-width: 247px;
