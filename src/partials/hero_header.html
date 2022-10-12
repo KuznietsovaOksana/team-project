@@ -1,10 +1,10 @@
 <!-- ======================== Header =============================== -->
 <header class="header">
-    <div class="header-container container">
+    <div class="header__container container">
         <a class="logo" href="#home" aria-label="logo">
             <!-- добавить svg и через медиа поменять размер, она векторная и не изменит качества -->
             <img 
-            class="logo-img" 
+            class="logo__img" 
             srcset=
             "./images/header_hero/logo_m-min.png 41w,
             ./images/header_hero/logo_m@2x-min.png 81w,
@@ -17,19 +17,19 @@
             src="./images/header_hero/logo_m-min.png" 
             alt="logo">
         </a>
-        <nav class="header-nav">
-            <ul class="header-nav__list">
-                <li class="header-nav__item">
-                    <a href="#home" class="header-nav__link">Home</a>
+        <nav class="header__nav">
+            <ul class="header__list">
+                <li class="header__item">
+                    <a href="#home" class="header__link">Home</a>
                 </li>
-                <li class="header-nav__item">
-                    <a href="#how-its-made" class="header-nav__link">How it's made?</a>
+                <li class="header__item">
+                    <a href="#how-its-made" class="header__link">How it's made?</a>
                 </li>
-                <li class="header-nav__item">
-                    <a href="#our-products" class="header-nav__link">Our products</a>
+                <li class="header__item">
+                    <a href="#our-products" class="header__link">Our products</a>
                 </li>
-                <li class="header-nav__item">
-                    <a href="#contact" class="header-nav__link">Contacts</a>
+                <li class="header__item">
+                    <a href="#contact" class="header__link">Contacts</a>
                 </li>
             </ul>
         </nav>
@@ -49,38 +49,40 @@
 </header>
 <!-- ======================== Hero ================================= -->
 <section class="hero">
-    <div class="hero-container container">
+    <div class="hero__container container">
         <h1 class="hero__title" id="home">ice cream <br> made with <br>
         <span class="hero__passion">passion</span></h1>
-        <ul class="hero__wrap">
-            <li class="hero__item hero__item--btn"><a class="hero__link hero__link--rct" href="#products">Products</a></li>
+        <ul class="hero__btn-set">
+            <li class="hero__item"><a class="hero__link hero__link--rct" href="#products">Products</a></li>
             <li class="hero__item"><a class="hero__link hero__link--ul" href="#how-its-made">How it's made?</a></li>
         </ul>
         
          <div class="hero__content">
-            <img class="hero__img"
+            <img class="hero__plate-img"
             srcset=
             "./images/header_hero/much_ice-cream_t-min.png 152w,
             ./images/header_hero/much_ice-cream_t@2x-min.png 304w,
             ./images/header_hero/much_ice-cream_d-min.png 225w,
             ./images/header_hero/much_ice-cream_d@2x-min.png 450w"
             sizes="(min-width: 1200px) 225px, (min-width: 768px) 152px, 100vw"
-            src="./images/header_hero/much_ice-cream_t-min.png" alt="pallet">    
+            src="./images/header_hero/much_ice-cream_t-min.png" alt="plate">    
         </div>  
 
-        <a class="hero__arrow">
+        <a href="#" class="hero__quote">
             <p class="hero__text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
             </p>
-            <svg class="arrow-icon" width="40" height="15">
-                <use href="./icons/icons.svg#arrow"></use>
-            </svg>
-            <svg class="arrow-hover-icon" width="50" height="15">
-              <use href="./icons/icons.svg#arrow-hover"></use>
-            </svg>
-            <svg class="arrow-focus-icon" width="50" height="15">
-                <use href="./icons/icons.svg#arrow-focus"></use>
-            </svg>
+           <div class="hero__arrow">
+                <svg class="arrow-icon" width="41" height="16">
+                    <use href="./icons/icons.svg#arrow"></use>
+                </svg>
+                <svg class="arrow-hover-icon" width="51" height="16">
+                    <use href="./icons/icons.svg#arrow-hover"></use>
+                </svg>
+                <svg class="arrow-focus-icon" width="51" height="22">
+                    <use href="./icons/icons.svg#arrow-focus"></use>
+                </svg>
+           </div>
         </a> 
         
         <ul class="hero-store">
@@ -93,6 +95,19 @@
                 <p class="hero-store__type">food trucks</p>
             </li>
         </ul>
+
+        <div class="hero__icecream">
+            <img class="hero__icecream-img"
+             srcset=
+            "./images/header_hero/ice-cream_m-min.png 276w,
+            ./images/header_hero/ice-cream_m@2x-min.png 551w,
+            ./images/header_hero/ice-cream_t-min.png 379w,
+            ./images/header_hero/ice-cream_t@2x-min.png 757w,
+            ./images/header_hero/ice-cream_d-min.png 642w,
+            ./images/header_hero/ice-cream_d@2x-min.png 1284w"
+            sizes="(min-width: 1200px) 642px, (min-width: 768px) 379px, (min-width: 320) 276px, 100vw"
+            src="./images/header_hero/ice-cream_m-min.png" alt="icecream">
+        </div>
     </div>
     
 </section>
@@ -100,7 +115,7 @@
 <div class="menu js-menu-container container" id="mobile-menu">
     <div class="menu__header">     
         <a class="logo" href="#" aria-label="logo">
-            <img class="logo-img" srcset="./images/header_hero/logo_m-min.png 41w,
+            <img class="logo__img" srcset="./images/header_hero/logo_m-min.png 41w,
                     ./images/header_hero/logo_m@2x-min.png 81w,
                     ./images/header_hero/logo_t-min.png 48w,
                     ./images/header_hero/logo_t@2x-min.png 96w,
