@@ -21,6 +21,7 @@
 .modal {
   max-height: 100vh;
   overflow: auto;
+
   opacity: 0;
   visibility: hidden;
 
@@ -30,8 +31,11 @@
 
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
   z-index: 100;
+
+  transform: translateY(-100%) scale(0.5);
+
+  transition: opacity var(--animation), transform var(--animation);
 
   @media screen and (min-width: 480px) {
     width: 480px;
@@ -52,17 +56,21 @@
   background: var(--primary-white-color);
   border: 2px solid var(--accent-color);
 
-  transition: opacity var(--animation);
-
   @media screen and (min-width: 768px) {
     padding: 32px 60px;
   }
 }
 
-.modal.active,
 .overlay.active {
   opacity: 1;
   visibility: visible;
+  transition: opacity var(--animation);
+}
+
+.modal.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translate(-50%, -50%) scale(1);
 }
 
 .overlay {
@@ -77,5 +85,4 @@
   height: 100%;
   padding: 15px;
   background-color: rgba(0, 0, 0, 0.5);
-  transition: opacity var(--animation);
 }
