@@ -2,7 +2,6 @@
   padding-top: 60px;
   background-color: var(--bg-color);
   padding-bottom: 30px;
-  
 }
 
 .about__uppertitle {
@@ -141,8 +140,7 @@
   }
 }
 
-
-.pic {
+.set__img {
   position: relative;
   top: 22px;
   left: 0;
@@ -167,7 +165,7 @@
   }
 }
 
-.pic.pic-cow {
+.set__img.set__bg {
   // Mobile screen
   background-image: linear-gradient(
       to right,
