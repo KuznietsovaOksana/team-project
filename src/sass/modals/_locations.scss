@@ -1,0 +1,33 @@
+.locations__container {
+  padding-left: 28px;
+  padding-right: 28px;
+
+  @media screen and (min-width: 768px) {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
+
+.locations__title {
+  display: block;
+  text-align: center;
+
+  font-family: var(--title-font);
+  font-size: 20px;
+}
+
+.location__map {
+  width: 100%;
+  border-radius: 10px;
+  margin: 20px 0 24px;
+  height: 200px;
+
+  @media screen and (min-width: 768px) {
+    margin: 34px 0 34px;
+    height: 260px;
+  }
+}
+
+.location__button {
+  margin: 0 auto;
+}
