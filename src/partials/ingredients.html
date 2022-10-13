@@ -7,11 +7,18 @@
     </button>
     <h3 class="ingredients__title">Chololate icecream</h3>
     <div class="ingredients__img-wrapper">
-      <!-- <img
-          class="ingredients__img"
-          src="./../images/products/"
-          alt="Мороженко"
-        /> -->
+      <img
+        class="ingredients__img"
+        srcset="
+          ../src/images/products/cholocate_ice-cream_m-min.jpg    1x,
+          ../src/images/products/cholocate_ice-cream_m@2x-min.jpg 2x
+        "
+        src="../src/images/products/cholocate_ice-cream_m-min.jpg"
+        alt="Морозивко"
+        width="131"
+        height="131"
+        loading="lazy"
+      />
     </div>
     <ul class="ingredients__composition">
       <li class="ingredients__info">
@@ -76,9 +83,7 @@
           placeholder="Comment"
         ></textarea>
       </label>
-      <label class="form__label-btn">
-        <button class="button button-ingredients" type="submit">Submit</button>
-      </label>
+      <button class="button button-ingredients" type="submit">Submit</button>
     </form>
   </div>
 </div>

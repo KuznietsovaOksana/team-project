@@ -1,3 +1,9 @@
+.ingredients__container {
+  padding: 28px 20px 32px;
+  @media screen and (min-width: 768px) {
+    padding: 32px 40px;
+  }
+}
 .ingredients__title {
   font-family: var(--title-font);
   font-size: 20px;
@@ -45,6 +51,7 @@
   position: relative;
   margin: 0 auto;
   z-index: 100;
+  border-radius: 50%;
 }
 .ingredients__composition {
   display: flex;
@@ -153,4 +160,11 @@
   flex-grow: 1;
   display: inline-block;
   margin-right: auto;
+}
+.button-ingredients {
+  margin: 0 auto;
+  padding: 12px 39px;
+  @media screen and (min-width: 768px) {
+    padding: 12px 34px;
+  }
 }
