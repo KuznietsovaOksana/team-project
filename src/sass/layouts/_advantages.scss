@@ -1,117 +1,124 @@
-
-  
-  .button__span {
-    margin-left: 8px;
-  }
+.button__span {
+  margin-left: 8px;
+}
 
 .advantages {
-    background-color: var(--bg-color);
+  background-color: var(--bg-color);
+  padding-top: 21px;
+  padding-bottom: 36px;
+  @media screen and (min-width: 768px) {
     padding-top: 21px;
-    padding-bottom: 36px;
-    @media screen and (min-width:768px){
-      padding-top: 21px;
-      padding-bottom: 40px;
-      }
-      @media screen and (min-width:1200px){
-        padding-top: 35px;
-        padding-bottom: 86px;
-      }
-    }
-  
-.advantages__name {
-    margin-top: 16px;
-    margin: 0 auto;
-    font-family: var(--number-font);
-    font-style: normal;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
-    text-align: center;
-    text-transform: uppercase;
-    color: var(--primary-white-color);
-    @media screen and (min-width:768px){
-      font-size: 48px;
-      line-height: 1.23;
-      }
-      @media screen and (min-width:1200px){
-        font-size: 58px;
-        line-height: 1.22;
-      }
-    }
-  
-  .advantages__description {
-    margin-top: 18px;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 12px;
-    line-height: 1.7;
-    text-align: center;
-    color: var(--primary-white-color);
-    @media screen and (min-width:768px){
-      margin-top: 32px;
-      font-style: normal;
-      font-weight: 400;
-      font-size: 14px;
-      }
-      @media screen and (min-width:1200px){
-        margin-top: 40px;
-        font-size: 16px;
-        line-height: 176%;
-        letter-spacing: 0.02em;
-      }
-    }
-  
-  .advantages__item:not(:last-child) {
-    margin-bottom: 27px;
+    padding-bottom: 40px;
   }
-  
-  .advantages__set {
-    display: flex;
-    justify-content: center;
+  @media screen and (min-width: 1200px) {
+    padding-top: 35px;
+    padding-bottom: 86px;
   }
+}
 
-  .advantages__name::before {
+.advantages__name {
+  margin-top: 16px;
+  margin: 0 auto;
+  font-family: var(--number-font);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--primary-white-color);
+  @media screen and (min-width: 768px) {
+    font-size: 48px;
+    line-height: 1.23;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 58px;
+    line-height: 1.22;
+  }
+}
+
+.advantages__description {
+  margin-top: 18px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.7;
+  text-align: center;
+  color: var(--primary-white-color);
+  @media screen and (min-width: 768px) {
+    margin-top: 32px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-top: 40px;
+    font-size: 16px;
+    line-height: 176%;
+    letter-spacing: 0.02em;
+  }
+}
+
+.advantages__item:not(:last-child) {
+  margin-bottom: 27px;
+}
+
+.advantages__item {
+  transform: 250ms filter scale box-shadow cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.advantages__item:hover,
+.advantages__item:focus {
+  filter: drop-shadow(0 5px 15px rgba(0, 0, 0, 0.3));
+  box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.3);
+  scale: 1.1;
+  border-radius: 10px;
+}
+
+.advantages__set {
+  display: flex;
+  justify-content: center;
+}
+
+.advantages__name::before {
   // background-image: url(../icons/ice-cream-min.png);
-    content: '';
-    display: block;
-    margin: 0 auto;
-    margin-bottom: 20px;
-    background-color: var(--accent-color);
-    background-size: 36px 36px;
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 50px;
-    height: 50px;
-    display: block;
-    text-align: center;
-    border-radius: 50%;
-    @media screen and (min-width:768px){
-      margin-bottom: 32px;
-      }
-      @media screen and (min-width:1200px){
-        margin-bottom: 40px;
-        
-      }
-    }
-  
+  content: '';
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  background-color: var(--accent-color);
+  background-size: 36px 36px;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 50px;
+  height: 50px;
+  display: block;
+  text-align: center;
+  border-radius: 50%;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 32px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 40px;
+  }
+}
+
 .advantages__name--cows::before {
-    background-image: url(../icons/cow@2x-min.png);
-  }
+  background-image: url(../icons/cow@2x-min.png);
+}
 .advantages__name--weights::before {
-    background-image: url(../icons/weight@2x-min.png);
-  }
+  background-image: url(../icons/weight@2x-min.png);
+}
 .advantages__name--icecreams::before {
-   background-image: url(../icons/ice-cream@2x-min.png);
-   }
-  
+  background-image: url(../icons/ice-cream@2x-min.png);
+}
+
 .advantages__list {
-    @media screen and (min-width:768px){
-      display: flex;
-      gap: 80px;
-      }
-      @media screen and (min-width:1200px){
-        margin-top: 60px;
-      }
-    }
-    
-  
+  @media screen and (min-width: 768px) {
+    display: flex;
+    gap: 80px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-top: 60px;
+  }
+}
