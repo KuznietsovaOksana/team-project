@@ -1,0 +1,36 @@
+
+<div class="modal" data-modal="2">
+    <div class="modal-container header__modal-container">
+        <button class="close-button js-modal-close">
+            <svg width="20px" height="20px">
+                <use href="icons/icons.svg#close-mini"></use>
+            </svg>
+        </button>
+        <h2 class="modal__title">Buy now</h2>
+        <ul class="modal__list">
+            <li class="modal__item modal__item--green">
+                <h3 class="modal__heading">ice cream</h3>
+            </li>
+            <li class="modal__item modal__item--yellow">
+                <h3 class="modal__heading">ice coffee</h3>
+             </li>
+            <li class="modal__item modal__item--red">
+                <h3 class="modal__heading">milkshakes</h3>
+            </li>
+        </ul>
+        <form class="form">
+            <label class="form__lable">
+                <input class="form__input" type="text" name="username" required placeholder="Name"/>
+            </label>
+            <label class="form__lable">
+                <input class="form__input" type="tel" name="phone_number" required placeholder="Phone"/>
+            </label>
+            <label class="form__textarea-wrap">
+                <textarea class="form__textarea" name="feedback" rows="5" placeholder="Comment"></textarea>
+            </label>
+            <button class="button form__label-btn" type="submit">Submit</button>
+        </form>
+    </div>
+</div>
+
+<div class="overlay js-overlay-modal"></div>
