@@ -84,6 +84,12 @@
 
   border-radius: 24px;
 
+  transition: transform 100ms linear;
+
+  &:hover {
+    transform: scale(1.01);
+  }
+
   &::after {
     content: '';
 
