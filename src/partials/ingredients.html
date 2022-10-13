@@ -1,0 +1,89 @@
+<div class="modal ingredients" data-modal="3">
+  <div class="modal-container ingredients__container">
+    <button class="close-button js-modal-close" type="button">
+      <svg width="20px" height="20px">
+        <use href="./../src/icons/icons.svg#close-mini"></use>
+      </svg>
+    </button>
+    <h3 class="ingredients__title">Chololate icecream</h3>
+    <div class="ingredients__img-wrapper">
+      <img
+        class="ingredients__img"
+        srcset="
+          ../src/images/products/cholocate_ice-cream_m-min.jpg    1x,
+          ../src/images/products/cholocate_ice-cream_m@2x-min.jpg 2x
+        "
+        src="../src/images/products/cholocate_ice-cream_m-min.jpg"
+        alt="Морозивко"
+        width="131"
+        height="131"
+        loading="lazy"
+      />
+    </div>
+    <ul class="ingredients__composition">
+      <li class="ingredients__info">
+        <span class="ingredients__quantity">320</span>
+        kcal
+      </li>
+      <li class="ingredients__info">
+        <span class="ingredients__quantity">4g</span>
+        Prote...
+      </li>
+      <li class="ingredients__info">
+        <span class="ingredients__quantity">8,2g</span>
+        Fats
+      </li>
+      <li class="ingredients__info">
+        <span class="ingredients__quantity">40,4g </span>
+        Carbs
+      </li>
+    </ul>
+    <h4 class="ingredients__subtitle">Ingredients</h4>
+    <ul class="ingredients__list">
+      <li class="ingredients__item">
+        <span class="ingredients__text">Milk</span>100ml
+      </li>
+      <li class="ingredients__item">
+        <span class="ingredients__text">Belgian chocolate</span>20g
+      </li>
+      <li class="ingredients__item">
+        <span class="ingredients__text">Cream</span>150 ml
+      </li>
+      <li class="ingredients__item">
+        <span class="ingredients__text">Cocoa powder</span>30g
+      </li>
+      <li class="ingredients__item">
+        <span class="ingredients__text">Sugar</span>40g
+      </li>
+      <li class="ingredients__item">
+        <span class="ingredients__text">Vanilla sugar</span>10g
+      </li>
+    </ul>
+    <form class="form">
+      <label class="form__label">
+        <input
+          class="form__input"
+          type="text"
+          name="ingredients-name"
+          placeholder="Name"
+        />
+      </label>
+      <label class="form__label">
+        <input
+          class="form__input"
+          type="tel"
+          name="ingredients-phone"
+          placeholder="Phone"
+        />
+      </label>
+      <label class="form__label form__label--big">
+        <textarea
+          class="form__textarea"
+          name="ingredients__comment"
+          placeholder="Comment"
+        ></textarea>
+      </label>
+      <button class="button button-ingredients" type="submit">Submit</button>
+    </form>
+  </div>
+</div>
