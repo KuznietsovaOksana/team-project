@@ -3,8 +3,9 @@
   const openMenuBtn = document.querySelector('.js-open-menu');
   const closeMenuBtn = document.querySelector('.js-close-menu');
   const menuNav = document.querySelector('.menu__nav');
+  const buyNow = document.querySelector('.open-buy-now');
   // ...
-  const menuBtn = document.querySelector('.menu');
+
   // ...
   const toggleMenu = () => {
     const isMenuOpen =
@@ -21,18 +22,15 @@
   openMenuBtn.addEventListener('click', toggleMenu);
   closeMenuBtn.addEventListener('click', toggleMenu);
   menuNav.addEventListener('click', (event) => {
-        console.log(event.target);
+    console.log(event.target);
 
     if (event.target.classList.contains('menu__link')) {
       toggleMenu();
-      console.log(1);
     }
 
-    else if (event.target.classList.contains('menu-btn')) {
-      toggleMenu();
-      console.log(1);
-    }
   });
+
+console.log(buyNow)
 
   // Close the mobile menu on wider screens if the device orientation changes
   window.matchMedia('(min-width: 768px)').addEventListener('change', e => {
@@ -41,4 +39,8 @@
     openMenuBtn.setAttribute('aria-expanded', false);
     bodyScrollLock.enableBodyScroll(document.body);
   });
+  buyNow.addEventListener('click', (e) => {
+  toggleMenu()
+  console.log(1);
+});
 })();
