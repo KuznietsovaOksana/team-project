@@ -55,9 +55,12 @@ document.addEventListener('DOMContentLoaded', function () {
       overlay.classList.add('active');
     }); // end click
   }); // end foreach
+  const Youtube = document.getElementById('Youtube');
 
   closeButtons.forEach(function (item) {
     item.addEventListener('click', function (e) {
+      const iframeSrc = Youtube.src;
+      Youtube.src = iframeSrc;
       var parentModal = this.closest('.modal');
       document.body.classList.remove('noScroll');
       parentModal.classList.remove('active');
@@ -80,6 +83,8 @@ document.addEventListener('DOMContentLoaded', function () {
   );
 
   overlay.addEventListener('click', function () {
+    const iframeSrc = Youtube.src;
+    Youtube.src = iframeSrc;
     document.querySelector('.modal.active').classList.remove('active');
     this.classList.remove('active');
     document.body.classList.remove('noScroll');
