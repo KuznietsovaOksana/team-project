@@ -160,6 +160,7 @@
 }
 
 .hero__link--ul {
+    padding: 7px 10px;
     color: var(--accent-color);
     text-decoration: underline;
 
@@ -170,6 +171,11 @@
     }
     &:focus {
         color: var(--primary-white-color);
+    }
+
+
+    @media screen and (min-width: 1200px) {
+        padding: 12px 22px;
     }
 }
 
