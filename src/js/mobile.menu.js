@@ -3,7 +3,9 @@
   const openMenuBtn = document.querySelector('.js-open-menu');
   const closeMenuBtn = document.querySelector('.js-close-menu');
   const menuNav = document.querySelector('.menu__nav');
-
+  // ...
+  const menuBtn = document.querySelector('.menu');
+  // ...
   const toggleMenu = () => {
     const isMenuOpen =
       openMenuBtn.getAttribute('aria-expanded') === 'true' || false;
@@ -22,6 +24,11 @@
         console.log(event.target);
 
     if (event.target.classList.contains('menu__link')) {
+      toggleMenu();
+      console.log(1);
+    }
+
+    else if (event.target.classList.contains('menu-btn')) {
       toggleMenu();
       console.log(1);
     }
