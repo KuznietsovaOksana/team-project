@@ -46,7 +46,7 @@
 }
 
 .set__wrap {
-  transition-property: filter, scale;
+  transition-property: filter, transform;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
 }
@@ -54,7 +54,7 @@
 .set__wrap:focus,
 .set__wrap:hover {
   filter: drop-shadow(8px 8px 8px rgba(0, 0, 0, 0.5));
-  scale: 1.1;
+  transform: scale(1.1);
 }
 
 
