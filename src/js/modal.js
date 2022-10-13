@@ -50,6 +50,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
       /* После того как нашли нужное модальное окно, добавим классы
             подложке и окну чтобы показать их. */
+      document.body.classList.add("noScroll")
       modalElem.classList.add('active');
       overlay.classList.add('active');
     }); // end click
@@ -58,7 +59,7 @@ document.addEventListener('DOMContentLoaded', function () {
   closeButtons.forEach(function (item) {
     item.addEventListener('click', function (e) {
       var parentModal = this.closest('.modal');
-
+      document.body.classList.remove("noScroll")
       parentModal.classList.remove('active');
       overlay.classList.remove('active');
     });
@@ -82,3 +83,4 @@ document.addEventListener('DOMContentLoaded', function () {
     this.classList.remove('active');
   });
 }); // end ready
+
