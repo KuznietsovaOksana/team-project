@@ -10,6 +10,7 @@
   margin-bottom: 32px;
 }
 .form__input {
+  display: block;
   height: 42px;
   width: 100%;
 
@@ -40,6 +41,7 @@
   }
 }
 .form__textarea {
+  display: block;
   height: 84px;
   width: 100%;
 
@@ -71,11 +73,6 @@
     padding: 11px 16px;
   }
 }
-.form__label-btn {
-  display: block;
-  text-align: center;
-}
-
 // ! example
 
 // <form class="form">
@@ -97,7 +94,7 @@
 //               placeholder="Comment"
 //             ></textarea>
 //           </label>
-//           <label class="form__label-btn">
+//
 //             <button class="button button-ingredients" type="submit">Submit</button>
-//           </label>
+//
 //         </form>
