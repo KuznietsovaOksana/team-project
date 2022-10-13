@@ -64,9 +64,10 @@
 }
 
 .advantages__item {
-  transform: 250ms filter scale box-shadow cubic-bezier(0.19, 1, 0.22, 1);
+  transition-property: filter, scale, box-shadow, border-radius;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
 }
-
 .advantages__item:hover,
 .advantages__item:focus {
   filter: drop-shadow(0 5px 15px rgba(0, 0, 0, 0.3));
@@ -74,6 +75,7 @@
   scale: 1.1;
   border-radius: 10px;
 }
+
 
 .advantages__set {
   display: flex;
